@@ -1,4 +1,4 @@
-In this video, I will guide you on how to merge split APK files into a bundle APK file. You will learn the following: 
+I will guide you on how to merge split APK files into a bundle APK file. You will learn the following: 
 
 1. How to export split APK files to a host machine  
 2. How to merge these files 
@@ -6,13 +6,13 @@ In this video, I will guide you on how to merge split APK files into a bundle AP
 4. How to install and test on Android Emulator
 
 Link To Download APKEditor
-https://github.com/REAndroid/APKEditor/rel...
+https://github.com/REAndroid/APKEditor.git
 
 Commands:
 adb shell
-pm packages list
-pm path
-apk pull
+pm packages list -3
+pm path <name_of_package>
+apk pull <path_of_package>
 java -jar APKEditor-1.2.9.jar m -i "path to the split apk files folder"
 
 keytool -genkey -v -keystore custom.keystore -alias mykeyaliasname -keyalg RSA -keysize 2048 -validity 10000
